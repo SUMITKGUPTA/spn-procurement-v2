@@ -189,8 +189,11 @@ const App = () => {
 
   const handleCsvUpload = (event) => {
     const file = event.target.files[0];
-    if (!file || !user || !db) return;
-    setIsImporting(true);
+    if (!file) return;
+    if (!user || !db) {
+      alert('Firebase is still initializing. Please wait a moment and try again.');
+      return;
+    }    setIsImporting(true);
     const reader = new FileReader();
     reader.onload = async (e) => {
       const text = e.target.result;
