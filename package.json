@@ -1,15 +1,11 @@
 {
-  "name": "spn-procurement",
-  "version": "1.0.0",
   "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "lucide-react": "latest",
-    "firebase": "latest",
-        "react-scripts": "^5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "firebase": "^10.7.1",
+    "lucide-react": "^0.294.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.25"
   }
 }
